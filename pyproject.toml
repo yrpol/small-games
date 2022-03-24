@@ -3,9 +3,16 @@ name = "small-games"
 version = "0.1.0"
 description = ""
 authors = ["Yuriy Polishchuk <yr.polishchuk@gmail.com>"]
+packages = [
+    {include = "small_games" },
+]
+
+[tool.poetry.scripts]
+small-games = "small_games.scripts.small_games:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+colorama = "^0.4.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.0"
