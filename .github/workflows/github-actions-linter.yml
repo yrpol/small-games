@@ -1,0 +1,7 @@
+name: Check linter flake8
+on: [push]
+jobs:
+  Check-Linter:
+    runs-on: ubuntu-latest
+    steps:
+      - run: make lint 
