@@ -4,4 +4,5 @@ jobs:
   Check-Linter:
     runs-on: ubuntu-latest
     steps:
+      - run: poetry install 
       - run: make lint 
