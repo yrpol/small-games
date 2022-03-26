@@ -15,3 +15,6 @@ package-install:
 
 small-games:
 	poetry run small-games
+
+lint:
+	poetry run flake8 small_games
